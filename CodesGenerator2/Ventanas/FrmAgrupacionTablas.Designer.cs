@@ -40,6 +40,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnQuitar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTablas)).BeginInit();
@@ -49,6 +50,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btnQuitar);
             this.panel1.Controls.Add(this.btnAgregar);
             this.panel1.Controls.Add(this.lsbTablas);
             this.panel1.Controls.Add(this.label1);
@@ -63,7 +65,7 @@
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.Location = new System.Drawing.Point(314, 88);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(278, 57);
+            this.btnAgregar.Size = new System.Drawing.Size(278, 44);
             this.btnAgregar.TabIndex = 3;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -74,6 +76,7 @@
             this.lsbTablas.FormattingEnabled = true;
             this.lsbTablas.Location = new System.Drawing.Point(3, 3);
             this.lsbTablas.Name = "lsbTablas";
+            this.lsbTablas.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.lsbTablas.Size = new System.Drawing.Size(302, 186);
             this.lsbTablas.TabIndex = 2;
             // 
@@ -114,6 +117,7 @@
             this.dgvTablas.Location = new System.Drawing.Point(0, 0);
             this.dgvTablas.Name = "dgvTablas";
             this.dgvTablas.ReadOnly = true;
+            this.dgvTablas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvTablas.Size = new System.Drawing.Size(607, 219);
             this.dgvTablas.TabIndex = 0;
             // 
@@ -150,6 +154,7 @@
             this.btnCerrar.TabIndex = 3;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // btnGuardar
             // 
@@ -160,6 +165,18 @@
             this.btnGuardar.TabIndex = 2;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // btnQuitar
+            // 
+            this.btnQuitar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuitar.Location = new System.Drawing.Point(314, 145);
+            this.btnQuitar.Name = "btnQuitar";
+            this.btnQuitar.Size = new System.Drawing.Size(278, 44);
+            this.btnQuitar.TabIndex = 4;
+            this.btnQuitar.Text = "Quitar";
+            this.btnQuitar.UseVisualStyleBackColor = true;
+            this.btnQuitar.Click += new System.EventHandler(this.btnQuitar_Click);
             // 
             // FrmAgrupacionTablas
             // 
@@ -171,6 +188,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FrmAgrupacionTablas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agrupación de Tablas";
             this.Load += new System.EventHandler(this.FrmAgrupacionTablas_Load);
             this.panel1.ResumeLayout(false);
@@ -196,5 +214,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Tablas;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnQuitar;
     }
 }

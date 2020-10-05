@@ -56,6 +56,7 @@
     <Compile Include="Proyectos\AgrupacionTablas.cs" />
     <Compile Include="Proyectos\ConfiguracionConexionBD.cs" />
     <Compile Include="Proyectos\ListaAgrupacionesTablas.cs" />
+    <Compile Include="Proyectos\ManejadorAgrupacionTablas.cs" />
     <Compile Include="Proyectos\ManejadorConfiguracionConexionBD.cs" />
     <Compile Include="Proyectos\ManejadorProyectos.cs" />
     <Compile Include="Proyectos\ManejadorConfiguracionTablas.cs" />

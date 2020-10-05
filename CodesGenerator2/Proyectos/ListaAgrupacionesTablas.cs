@@ -9,5 +9,10 @@ namespace CodesGenerator2.Proyectos
     public class ListaAgrupacionesTablas
     {
         public List<AgrupacionTablas> AgrupacionesTablas { get; set; }
+
+        public ListaAgrupacionesTablas()
+        {
+            AgrupacionesTablas = new List<AgrupacionTablas>();
+        }
     }
 }

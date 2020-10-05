@@ -16,5 +16,23 @@ namespace CodesGenerator2.Ventanas
         {
             InitializeComponent();
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+            }
+            catch(Exception ex)
+            {
+
+            }
+        }
     }
 }

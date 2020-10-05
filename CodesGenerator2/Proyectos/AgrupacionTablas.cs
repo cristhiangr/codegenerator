@@ -13,7 +13,7 @@ namespace CodesGenerator2.Proyectos
 
         public AgrupacionTablas()
         {
-
+            Tablas = new List<string>();
         }
     }
 }
